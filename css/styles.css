@@ -181,7 +181,7 @@ img {
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
 
-  transition-property: var(--blue-color);
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -217,7 +217,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--gray-color);
   align-items: center;
-  transition-property: var(--blue-color);
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -235,7 +235,7 @@ img {
   fill: var(--gray-color);
   margin-right: 10px;
   align-items: center;
-  transition-property: var(--blue-color);
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -528,38 +528,42 @@ img {
   justify-content: space-evenly;
 }
 .section-our-clients-item {
+  background-position: center;
+}
+.advantage-clients-link:hover,
+:focus {
+  border: 1px solid rgba(33, 150, 243, 1);
+  border-radius: 4px;
+  transition-duration: 250ms;
+}
+
+.advantage-clients-link {
   flex-basis: calc(
     (100% - var(--indent) * (var(--items-6) - 1)) / var(--items-6)
   );
   width: 170px;
   height: 92px;
 
-  background-position: center;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  transition-property: 1px solid rgba(33, 150, 243, 1);
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.section-our-clients-item:hover,
-:focus {
-  border: 1px solid rgba(33, 150, 243, 1);
-  border-radius: 4px;
-  transition-duration: 250ms;
 }
 .advantage-clients-list-icon {
   fill: rgba(175, 177, 184, 1);
-  transition-property: rgba(33, 150, 243, 1);
+  transition-property: color;
   transition-duration: 250ms;
+
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.section-our-clients-item:hover .advantage-clients-list-icon,
-.section-our-clients-item:focus .advantage-clients-list-icon {
+.advantage-clients-link:hover .advantage-clients-list-icon,
+.advantage-clients-link:focus .advantage-clients-list-icon {
   fill: rgba(33, 150, 243, 1);
   transition-duration: 250ms;
 }
@@ -608,7 +612,7 @@ img {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--background-color);
-  transition-property: var(--blue-color);
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -624,7 +628,7 @@ img {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--gray-color);
-  transition-property: var(--blue-color);
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -815,7 +819,7 @@ img {
   flex-basis: calc(
     (100% - var(--indent-8) * (var(--items-5) - 1)) / var(--items-5)
   );
-  transition-property: var(--blue-color);
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
